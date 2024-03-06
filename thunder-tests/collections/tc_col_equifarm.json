@@ -1,0 +1,165 @@
+{
+    "_id": "4954cc9e-53db-4aa7-a067-953ad1b50893",
+    "colName": "EquiFarm",
+    "created": "2023-07-04T13:23:46.849Z",
+    "sortNum": 10000,
+    "folders": [
+        {
+            "_id": "16b2067c-1d2a-4a8a-82ee-61513a1ce50c",
+            "name": "Admin",
+            "containerId": "",
+            "created": "2023-07-04T13:23:56.934Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "3670e870-ba0b-435e-8fd0-280fd1919479",
+            "name": "Types Of Services",
+            "containerId": "",
+            "created": "2023-07-04T13:24:17.322Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "b745720f-77a3-4709-a4bb-8e15d9c88f8c",
+            "colId": "4954cc9e-53db-4aa7-a067-953ad1b50893",
+            "containerId": "3670e870-ba0b-435e-8fd0-280fd1919479",
+            "name": "Types Of Services",
+            "url": "http://localhost:8082/api/v1/type/of/service/get/all",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-07-04T13:24:07.086Z",
+            "modified": "2023-07-04T13:28:31.199Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f0542a36-b1e0-4b1e-93a9-d061b5a48faa",
+            "colId": "4954cc9e-53db-4aa7-a067-953ad1b50893",
+            "containerId": "16b2067c-1d2a-4a8a-82ee-61513a1ce50c",
+            "name": "Admin Sign up",
+            "url": "",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-07-04T13:24:33.085Z",
+            "modified": "2023-07-04T13:24:33.085Z",
+            "headers": []
+        },
+        {
+            "_id": "d716fdfb-d66c-4eb9-a28b-bb9799f593f3",
+            "colId": "4954cc9e-53db-4aa7-a067-953ad1b50893",
+            "containerId": "16b2067c-1d2a-4a8a-82ee-61513a1ce50c",
+            "name": "Login",
+            "url": "http://localhost:8082/api/v1/auth/authenticate",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-07-04T13:26:18.966Z",
+            "modified": "2023-07-04T13:26:54.619Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"admin@mail.com\",\n  \"password\":\"password\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a1e36446-4272-4deb-bb31-157ab72f94ec",
+            "colId": "4954cc9e-53db-4aa7-a067-953ad1b50893",
+            "containerId": "16b2067c-1d2a-4a8a-82ee-61513a1ce50c",
+            "name": "Admin Profile",
+            "url": "http://localhost:8082/api/v1/admin/profile",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-07-04T13:27:22.153Z",
+            "modified": "2023-07-04T13:27:41.438Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY4ODQ3NzIxNiwiZXhwIjoxNjg4NTYzNjE2fQ.TcDROhb7OvoOJCxLYvceGf3xYlDMob8xDucr6IgCZxw"
+            },
+            "tests": []
+        },
+        {
+            "_id": "6fae0c79-1661-4fce-9e07-0f70d263d14f",
+            "colId": "4954cc9e-53db-4aa7-a067-953ad1b50893",
+            "containerId": "3670e870-ba0b-435e-8fd0-280fd1919479",
+            "name": "Add Type of Service",
+            "url": "http://localhost:8082/api/v1/type/of/service/add",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-07-04T13:29:03.960Z",
+            "modified": "2023-07-04T13:31:34.713Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"typeOfService\":\"Veterinary\",\n \"description\":\"This involves soil testing to determine fertility of soil\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY4ODQ3NzIxNiwiZXhwIjoxNjg4NTYzNjE2fQ.TcDROhb7OvoOJCxLYvceGf3xYlDMob8xDucr6IgCZxw"
+            },
+            "tests": []
+        },
+        {
+            "_id": "ae165ac7-7212-4a5e-a0ef-fc9ac9d9d52b",
+            "colId": "4954cc9e-53db-4aa7-a067-953ad1b50893",
+            "containerId": "3670e870-ba0b-435e-8fd0-280fd1919479",
+            "name": "Update Type of Services",
+            "url": "http://localhost:8082/api/v1/type/of/service/update/3",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2023-07-04T13:33:50.927Z",
+            "modified": "2023-07-04T13:35:45.391Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"description\": \"This involves treating of farm animals.\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY4ODQ3NzIxNiwiZXhwIjoxNjg4NTYzNjE2fQ.TcDROhb7OvoOJCxLYvceGf3xYlDMob8xDucr6IgCZxw"
+            },
+            "tests": []
+        },
+        {
+            "_id": "6748cb7c-1a61-45a9-8cc6-864bb0898f6b",
+            "colId": "4954cc9e-53db-4aa7-a067-953ad1b50893",
+            "containerId": "3670e870-ba0b-435e-8fd0-280fd1919479",
+            "name": "Get Type of Service by Id",
+            "url": "http://localhost:8082/api/v1/type/of/service/get/by/typeOfServiceById/3",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-07-04T13:36:17.101Z",
+            "modified": "2023-07-04T13:37:06.868Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "dbd3dc21-3063-4349-831b-3af203864858",
+            "colId": "4954cc9e-53db-4aa7-a067-953ad1b50893",
+            "containerId": "3670e870-ba0b-435e-8fd0-280fd1919479",
+            "name": "Delete Type of Service",
+            "url": "http://localhost:8082/api/v1/type/of/service/delete/1",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2023-07-04T13:37:24.402Z",
+            "modified": "2023-07-04T13:39:03.126Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY4ODQ3NzIxNiwiZXhwIjoxNjg4NTYzNjE2fQ.TcDROhb7OvoOJCxLYvceGf3xYlDMob8xDucr6IgCZxw"
+            },
+            "tests": []
+        }
+    ]
+}
